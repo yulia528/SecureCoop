@@ -1,0 +1,9 @@
+{
+  "name": "Ionic5FullApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "be047f19"
+}

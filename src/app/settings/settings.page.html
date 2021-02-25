@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Coop</ion-label>
+    <ion-select name="coopSelector" value="Near house">
+      <ion-select-option value="Near house">Near house</ion-select-option>
+      <ion-select-option value="Out back">Out back</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-list>
+    <ion-list-header>Open</ion-list-header>
+    <ion-item>
+      <ion-select name="beforeAfterSunrise" value="before">
+        <ion-select-option value="before">before</ion-select-option>
+        <ion-select-option value="at">at</ion-select-option>
+        <ion-select-option value="after">after</ion-select-option>
+      </ion-select>
+      sunrise
+    </ion-item>
+    <ion-item>
+      <app-counter-input></app-counter-input>
+      <div>minutes</div>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>Close</ion-list-header>
+    <ion-item>
+      <ion-select name="beforeAfterSunset" value="at">
+        <ion-select-option value="before">before</ion-select-option>
+        <ion-select-option value="at">at</ion-select-option>
+        <ion-select-option value="after">after</ion-select-option>
+      </ion-select>
+      sunset
+    </ion-item>
+    <ion-item>
+      <app-counter-input></app-counter-input>
+      <div>minutes</div>
+    </ion-item>
+  </ion-list>
+</ion-content>
